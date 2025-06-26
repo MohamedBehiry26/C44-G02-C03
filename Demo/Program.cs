@@ -120,6 +120,7 @@ namespace Demo
 
             #endregion
 
+
             #region Fraction & Discard
             //12.3425865224484488484841
             //float number = 12.34258f;
