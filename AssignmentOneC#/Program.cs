@@ -14,10 +14,47 @@
              * ==> 10% tax applied  
              * ==> Final salary after tax 
              */
+
+            //console.write("enter your salary: ");
+            //double salary = convert.todouble(console.readline());
+
+            //if (salary < 5000)
+            //{
+            //    console.writeline("==> no tax");
+            //    console.writeline("==> final salary after tax: " + salary);
+            //}
+            //else if (salary >= 5000 && salary <= 9999)
+            //{
+            //    double tax = salary * 0.10;
+            //    double finalsalary = salary - tax;
+            //    console.writeline("==> 10% tax applied");
+            //    console.writeline("==> final salary after tax: " + finalsalary);
+            //}
+            //else if (salary >= 10000)
+            //{
+            //    double tax = salary * 0.20;
+            //    double finalsalary = salary - tax;
+            //    console.writeline("==> 20% tax applied");
+            //    console.writeline("==> final salary after tax: " + finalsalary);
+            //}
+            //else
+            //{
+            //    console.writeline("invalid input.");
+            //}
             #endregion
 
             #region 1-	Write a program that allows the user to enter a number then print it.
-
+            
+            //Console.Write("Enter a number: ");
+            //string input = Console.ReadLine();
+            //if (double.TryParse(input, out double number))
+            //{
+            //    Console.WriteLine("You entered: " + number);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid input. Please enter a valid number.");
+            //}
             #endregion
 
             #region 2-	Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen 
