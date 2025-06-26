@@ -152,6 +152,104 @@ namespace Demo
             //Console.WriteLine(number.ToString("C", cultureInfo)); // ١٢٫٣٤٢٥٨ ر.س.
             #endregion
 
+            #region Implicirt and explicit casting
+            #region Ex 1[int - long]
+            //implicit casting [safe casting]
+            //int x = 100; //4 bytes
+            //long y; // 8 bytes
+            //y = x; // safe casting
+            //Console.WriteLine(y); // 100
+            //explicit casting [unsafe casting]
+            //long x = 1000;
+            //int y = (int)x;
+            //Console.WriteLine(y);
+            //Arthmetic overflow    
+            //checked
+            //{
+            //    long x = 1000;
+            //    int y = (int)x;
+            //    unchecked
+            //    {
+            //        Console.WriteLine(y); 
+            //    }
+            //    }
+
+            //long x = 1000;
+            //if (x > int.MaxValue || x < int.MinValue)
+            //{
+            //    Console.WriteLine("Overflow: Cannot cast long to int safely.");
+            //}
+            //else
+            //{
+            //    int y = (int)x;
+            //    Console.WriteLine(y); 
+            //}
+
+            //object Num = 1000;
+            //if (Num.GetType() == typeof(int))
+            //{
+            //    int y = (int)Num;
+            //    Console.WriteLine(y);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Cannot cast Num to int safely.");
+            //}
+            #endregion
+
+            #region Ex 2[int - float ]
+            //implicit int ==> float
+            //int x = 100; // 4 bytes
+            //float y=x; //implicit casting
+            //Console.WriteLine(y);
+
+            //explicit float ==> int
+            //float x = 100.5f; 
+            //int y = (int)x; // explicit casting
+            //Console.WriteLine(y); // unsafe casting, will lose the decimal part
+            #endregion
+            #endregion
+
+            #region Casting [Convert - parse - TryParse]
+            //Ex :Enter name , Age ,salary
+            //Console.WriteLine("Enter your data: ");
+            //Console.WriteLine("Enter your name: ");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Enter your age: ");
+            //int age = Convert.ToInt32(Console.ReadLine()); // Convert 
+            //Console.WriteLine("Enter your salary:");
+            //double salary = Convert.ToDouble(Console.ReadLine()); // Convert
+            //Console.Clear ();
+            //Console.Beep(5, 120);
+            //Console.WriteLine($"Name: {name}, Age: {age}, Salary: {salary}");
+
+
+
+            //Console.WriteLine("Enter your data: ");
+            //Console.WriteLine("Enter your name: ");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Enter your age: ");
+            //int age = int.Parse(Console.ReadLine());  
+            //Console.WriteLine("Enter your salary:");
+            //double salary = double.Parse(Console.ReadLine()); 
+            //Console.Clear();
+            //Console.Beep(5, 120);
+            //Console.WriteLine($"Name: {name}, Age: {age}, Salary: {salary}");
+
+            //Console.WriteLine("Enter your data: ");
+            //Console.WriteLine("Enter your name: ");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Enter your age: ");
+            //int age;
+            //bool isAgeParsed = int.TryParse(Console.ReadLine(),out age);
+            //Console.WriteLine("Enter your salary:");
+            //double.TryParse(Console.ReadLine(),out double salary);
+            //Console.Clear();
+            //Console.WriteLine($"Name: {name}, Age: {(isAgeParsed ? age.ToString() : "Invalid Age")}, Salary: {salary}");
+            //Console.Beep(5, 120);
+            //Console.WriteLine($"Name: {name}, Age: {age}, Salary: {salary}");
+            #endregion
+
         }
     }
 }
