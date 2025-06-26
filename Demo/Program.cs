@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Globalization;
 
 namespace Demo
 {
@@ -119,7 +120,37 @@ namespace Demo
 
             #endregion
 
-    
+            #region Fraction & Discard
+            //12.3425865224484488484841
+            //float number = 12.34258f;
+            //Console.WriteLine(number); // 12.34258
+            //float number2 = 10;
+            //Console.WriteLine(number2); // 10
+
+            //decimal number = 12.34258m;
+            //Console.WriteLine(number); 
+            //decimal number2 = 10;
+            //Console.WriteLine(number2);
+
+            //float result = 3.0f / 2;
+            //Console.WriteLine(result); // 1.5
+
+            //double number = 12.3456;
+            //Console.WriteLine(number); // 12.3456
+
+            //Discard , Digit Separator[]
+            //int number3 = 1_000_000; // 1 million
+            //Console.WriteLine(number3); // 1000000
+            //int.TryParse(Console.ReadLine(), out _);
+
+            //int number4 = 1_000_000;
+            ////Console.WriteLine(number4); // 1000000
+            //Console.WriteLine($"{number4:c}");
+
+            //CultureInfo cultureInfo = new CultureInfo("ar-SA");
+            //Console.WriteLine(number.ToString("C", cultureInfo)); // ١٢٫٣٤٢٥٨ ر.س.
+            #endregion
+
         }
     }
 }
