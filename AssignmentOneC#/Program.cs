@@ -72,15 +72,21 @@
             #endregion
 
             #region 4-	Write C# program that Extract a substring from a given string.
-            string fullText = "Hello, World!";
-          
-            string extracted = fullText.Substring(7, 5); 
+            //string fullText = "Hello, World!";
 
-            Console.WriteLine("Original string: " + fullText);
-            Console.WriteLine("Extracted substring: " + extracted);
+            //string extracted = fullText.Substring(7, 5); 
+
+            //Console.WriteLine("Original string: " + fullText);
+            //Console.WriteLine("Extracted substring: " + extracted);
             #endregion
 
             #region 5-     Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+            int a = 10;
+            int b = a; 
+            b = 20;
+
+            Console.WriteLine("Value of a: " + a);
+            Console.WriteLine("Value of b: " + b);
 
             #endregion
 
