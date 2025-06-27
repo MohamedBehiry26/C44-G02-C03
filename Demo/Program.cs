@@ -396,6 +396,45 @@ namespace Demo
 
             #endregion
             #endregion
+
+            #region String formatting
+            //String Interpolation
+            //Equation: 10+5=15
+            //int x = 10, y = 5,result = x + y;
+            //ring msg= $"Equation: {x} + {y} = {result}";
+            //Console.WriteLine(msg); // Equation: 10 + 5 = 15
+            //Console.WriteLine($"Equation : {x} + {y} = {result}");
+            //Console.WriteLine(15);
+            //Console.WriteLine(true);
+            //Console.WriteLine(10.5);
+
+            //Format function
+            //string msg = string.Format("Equation: {0} + {1} = {2}", x, y, result);
+            //Console.WriteLine(msg);
+            //composite formatting
+            //int x = 10, y = 5, result = x + y;
+            //console.WriteLine("Equation: {0} + {1} = {2}", x, y, result);
+            //string concatenation
+            //int x = 10, y = 5, result = x + y;
+            //string msg = "Equation: " + x + " + " + y + " = " + result;
+            //Equation
+            //Equation :
+            //Equation : 10 
+            //Equation : 10 + 
+            //Equation : 10 + 5
+            //Equation : 10 + 5 =
+            //Equation : 10 + 5 = 15
+
+            //Console.WriteLine("Equation : " + x + " + " + y + " = " + result);
+            //D:\back c# rout\Template (2)\Template\AssignmentOneC#Solution
+            //String filepath="D:\\back c# rout\\Template (2)\\Template\\AssignmentOneC#Solution";
+            //Console.writeline(filepath);
+            //String filepath = @"D:\back c# rout\Template (2)\Template\AssignmentOneC#Solution";
+            //Console.WriteLine(filepath);
+            //string msg = "Mohamed \t Behairy";
+            //Console.WriteLine(msg)
+            #endregion
+
         }
     }
 }
