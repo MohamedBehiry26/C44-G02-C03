@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Demo
 {
@@ -250,6 +251,151 @@ namespace Demo
             //Console.WriteLine($"Name: {name}, Age: {age}, Salary: {salary}");
             #endregion
 
+            #region Operators and operators priority
+            #region Unary Operators
+            //Unary --> works on one variable, one operand
+            //int x = 10;
+            // 1] ++ ,, x=x+1 ,,x+=1;
+            //[ prefix : increment then print , postfix : print then increment ]
+            //Console.WriteLine("initial Value: " + x);// 10
+            //Console.WriteLine(  "++x: " + ++x); // 11
+            //Console.WriteLine("x++:" + X++); // 11
+            //Console.WriteLine("final Value: " + x); // 12
+
+            // 2] [ prefix : Decrement then print , postfix : print then decrement ]
+            // int Y = 10;
+            //Console.WriteLine("initial Value: " + y);// 10
+            //Console.WriteLine(  "--y: " + --y); // 9
+            //Console.WriteLine("y--:" + y--); // 9
+            //Console.WriteLine("final Value: " + y); // 8
+            #endregion
+            #region Binary /Arthmetic Operators
+            //Binary --> works on two variables, two operands
+            int a= 10, b = 5;
+            Console.WriteLine("Addition: " + (a + b)); // 15
+            Console.WriteLine("Subtraction: " + (a - b)); // 5
+            Console.WriteLine("Multiplication: " + (a * b)); // 50
+            Console.WriteLine("Division: " + (a / b)); // 2
+            Console.WriteLine("Modulus: " + (a % 3)); // 1
+                                                      //even or odd
+                                                      //even 2, odd 1
+            #endregion
+            #region Assignment operators
+            // int a = 10;
+            // //1. simple assignment
+            // a = 10;
+            // Console.WriteLine("Simple Assignment: " + a); // 10
+            // //2. Add and assign
+            ////A+= 5; // a = a + 5
+            //Console.WriteLine("Add and Assign: " + (a += 5)); // 15
+            // //3. Subtract and assign
+            // a -= 3; // a = a - 3
+            // Console.WriteLine("Subtract and Assign: " + a); // 12
+            // //4. Multiply and assign
+            // a *= 2; // a = a * 2
+            // Console.WriteLine("Multiply and Assign: " + a); // 24
+            // //5. Divide and assign
+            // a /= 4; // a = a / 4
+            // Console.WriteLine("Divide and Assign: " + a); // 6
+            // //6. Modulus and assign
+            // a %= 5; // a = a % 5
+            // Console.WriteLine("Modulus and Assign: " + a); // 1
+
+
+            #endregion
+            #region Relational Operators [Comparison Operators]
+            //return bool [true or false]
+            //int a = 10, b = 5;
+            //equal to(==)
+            //Console.WriteLine("a==b : " + (a == b)); // false
+            //not equal to(!=)
+            //Console.WriteLine("a!=b : " + (a != b)); // true
+            //greater than(>)
+            //Console.WriteLine("a>b : " + (a > b)); // true
+            //less than(<)
+            //Console.WriteLine("a<b : " + (a < b)); // false
+            //greater than or equal to(>=)
+            //Console.WriteLine("a>=b : " + (a >= b)); // true
+            //less than or equal to(<=)
+            //Console.WriteLine("a<=b : " + (a <= b)); // false
+
+            #endregion
+            #region Logical Operators
+            //short-circuiting
+            bool A = true, B = false;
+            //logical not (!)
+            Console.WriteLine("!A: " + !A); // false
+            Console.WriteLine("!B: " + !B); // true
+            //logical and (&&) [short-circuiting]
+            //true && true = true
+            //true && false = false
+            //false && true = false
+            //false && false = false
+            Console.WriteLine("A && B: " + (A && B)); // false
+            //logical or (||) [short-circuiting]
+            //true || true = true
+            //true || false = true
+            //false || true = true
+            //false || false = false
+            Console.WriteLine("A || B: " + (A || B)); // true
+            #endregion
+            #region Bitwise Operators
+            //int a=5; // 0101 in binary
+            //int b=3; // 0011 in binary
+            //Bitwise AND (&)
+            //true & true = true
+            //true & false = false
+            //false & true = false
+            //false & false = false
+            //Console.WriteLine("a & b: " + (a & b)); // 1 (0001 in binary)
+            //Bitwise OR (|)
+            //true | true = true
+            //true | false = true
+            //false | true = true
+            //false | false = false
+            //Console.WriteLine("a | b: " + (a | b)); // 7 (0111 in binary)
+            //Bitwise XOR (^)
+            //0^1 = 1
+            //1^0 = 1
+            //1^1 = 0
+            //0^0 = 0
+            //Console.WriteLine("a ^ b: " + (a ^ b)); // 6 (0110 in binary)
+            //Bitwise NOT (~)
+            //Console.WriteLine("~a: " + (~a)); // -6 (inverts all bits)
+            //left shift (<<)
+            //Console.WriteLine("a << 1: " + (a << 1)); // 10 (1010 in binary)
+            //right shift (>>)
+            //Console.WriteLine("a >> 1: " + (a >> 1)); // 2 (0010 in binary)
+            #endregion
+            #region Ternary Operator
+            //int a =5 ,b=20;
+            //string result
+            //example:simple comparison
+            //if (a > b)
+            //result = "a is greater than b";
+            //else if (b> a)
+            //result = "b is greater than a";
+            //else
+            //result = "a is equal to b";
+
+            //result = (a>b) ? "a is greater" :"b is greater";//if-else
+            //result = (a > b) ? "a is greater" : (b > a) ? "b is greater" : "a is equal to b"; // nested ternary
+
+
+            #endregion
+            #region operators priority
+            //int a = 10, b = 20,c =30;
+            //int equation1 = a - b * c;
+            //int equation2 = (a+b) /c;
+            //int equation3 = a + b * c / a;
+            //int equation4 = (a+b)% c;
+            //int equation5 = a + b++;
+            //int equation6 = a + ++b;
+            //int equation7 = a+b+++c++;
+
+
+            #endregion
+            #endregion
         }
     }
 }
