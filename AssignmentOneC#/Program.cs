@@ -137,15 +137,15 @@ namespace AssignmentOne
 
             #region 9-	Write a program that calculates the Body Mass Index (BMI) given a person's weight in kilograms and height in meters. The formula for BMI is BMI = (Weight) / (Height * Height)
 
-            Console.Write("Enter weight in kilograms: ");
-            double weight = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter weight in kilograms: ");
+            //double weight = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter height in meters: ");
-            double height = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter height in meters: ");
+            //double height = Convert.ToDouble(Console.ReadLine());
 
-            double bmi = weight / (height * height);
+            //double bmi = weight / (height * height);
 
-            Console.WriteLine("Your BMI is: " + bmi);
+            //Console.WriteLine("Your BMI is: " + bmi);
             #endregion
 
             #region 10-	Write a program that takes the date from the user and displays it in various formats using string interpolation.
@@ -154,7 +154,18 @@ namespace AssignmentOne
             //Today's date : 20 / 11 / 2001
             //Today's date : 20 – 11 – 2001
 
+            Console.Write("Enter day: ");
+            int day = Convert.ToInt32(Console.ReadLine());
 
+            Console.Write("Enter month: ");
+            int month = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter year: ");
+            int year = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Today's date : {day} , {month} , {year}");
+            Console.WriteLine($"Today's date : {day} / {month} / {year}");
+            Console.WriteLine($"Today's date : {day} – {month} – {year}");
             #endregion
 
             #region 11-	 What is the output of the following C# code?
