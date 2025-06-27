@@ -63,16 +63,21 @@
 
             #region 3 -    Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
 
-            double num1 = 10.5;
-            double num2 = 3.2;
-            double result = num1 / num2;
+            //double num1 = 10.5;
+            //double num2 = 3.2;
+            //double result = num1 / num2;
 
-            Console.WriteLine("Result of division: " + result);
+            //Console.WriteLine("Result of division: " + result);
 
             #endregion
 
             #region 4-	Write C# program that Extract a substring from a given string.
+            string fullText = "Hello, World!";
+          
+            string extracted = fullText.Substring(7, 5); 
 
+            Console.WriteLine("Original string: " + fullText);
+            Console.WriteLine("Extracted substring: " + extracted);
             #endregion
 
             #region 5-     Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
