@@ -98,18 +98,24 @@ namespace AssignmentOne
 
             #region 6-	 Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
 
-            Person person1 = new Person();
-            person1.Name = "Ali";
+            //Person person1 = new Person();
+            //person1.Name = "Ali";
 
-            Person person2 = person1; 
+            //Person person2 = person1; 
 
-            person2.Name = "Omar"; 
+            //person2.Name = "Omar"; 
 
-            Console.WriteLine("person1.Name: " + person1.Name);
-            Console.WriteLine("person2.Name: " + person2.Name);
+            //Console.WriteLine("person1.Name: " + person1.Name);
+            //Console.WriteLine("person2.Name: " + person2.Name);
             #endregion
 
             #region 7-	Write C# program that take two string variables and print them as one variable 
+            string firstName = "Mohamed";
+            string lastName = "Behiry";
+
+            string fullName = firstName + " " + lastName;
+
+            Console.WriteLine("Full name: " + fullName);
 
             #endregion
 
