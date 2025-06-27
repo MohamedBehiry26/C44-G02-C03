@@ -48,21 +48,26 @@
 
             #region 2-	Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen 
 
-            string input = "123abc";
+            //string input = "123abc";
 
-            try
-            {
-                int number = Convert.ToInt32(input); 
-                Console.WriteLine("Converted number: " + number);
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("FormatException: The string contains non-numeric characters and cannot be converted to an integer.");
-            }
+            //try
+            //{
+            //    int number = Convert.ToInt32(input); 
+            //    Console.WriteLine("Converted number: " + number);
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("FormatException: The string contains non-numeric characters and cannot be converted to an integer.");
+            //}
             #endregion
 
             #region 3 -    Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
 
+            double num1 = 10.5;
+            double num2 = 3.2;
+            double result = num1 / num2;
+
+            Console.WriteLine("Result of division: " + result);
 
             #endregion
 
