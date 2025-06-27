@@ -41,13 +41,24 @@
             #endregion
 
             #region 1-	Write a program that allows the user to enter a number then print it.
-            Console.Write("Enter a number: ");
-            string input = Console.ReadLine();
-            Console.WriteLine("You entered: " + input);
+            //Console.Write("Enter a number: ");
+            //string input = Console.ReadLine();
+            //Console.WriteLine("You entered: " + input);
             #endregion
 
             #region 2-	Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen 
 
+            string input = "123abc";
+
+            try
+            {
+                int number = Convert.ToInt32(input); 
+                Console.WriteLine("Converted number: " + number);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("FormatException: The string contains non-numeric characters and cannot be converted to an integer.");
+            }
             #endregion
 
             #region 3 -    Write C# program that Perform a simple arithmetic operation with floating-point numbers And mention what will happen
