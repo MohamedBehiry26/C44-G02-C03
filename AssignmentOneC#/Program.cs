@@ -1,5 +1,11 @@
-﻿namespace AssignmentOne
+﻿using System;
+
+namespace AssignmentOne
 {
+    class Person
+    {
+        public string Name;
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -81,17 +87,26 @@
             #endregion
 
             #region 5-     Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
-            int a = 10;
-            int b = a; 
-            b = 20;
+            //int a = 10;
+            //int b = a; 
+            //b = 20;
 
-            Console.WriteLine("Value of a: " + a);
-            Console.WriteLine("Value of b: " + b);
+            //Console.WriteLine("Value of a: " + a);
+            //Console.WriteLine("Value of b: " + b);
 
             #endregion
 
             #region 6-	 Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
 
+            Person person1 = new Person();
+            person1.Name = "Ali";
+
+            Person person2 = person1; 
+
+            person2.Name = "Omar"; 
+
+            Console.WriteLine("person1.Name: " + person1.Name);
+            Console.WriteLine("person2.Name: " + person2.Name);
             #endregion
 
             #region 7-	Write C# program that take two string variables and print them as one variable 
