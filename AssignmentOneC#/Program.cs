@@ -15,33 +15,35 @@
              * ==> Final salary after tax 
              */
 
-            Console.Write("Enter your salary amount: ");
-            double salary = Convert.ToDouble(Console.ReadLine());
-            double finalSalary = salary;
+            //Console.Write("Enter your salary amount: ");
+            //double salary = Convert.ToDouble(Console.ReadLine());
+            //double finalSalary = salary;
 
-            if (salary < 5000)
-            {
-                Console.WriteLine("No tax");
-                Console.WriteLine("==> Final salary after tax: " + finalSalary);
-            }
-            else if (salary >= 5000 && salary <= 9999)
-            {
-                double tax = salary * 0.10;
-                finalSalary = salary - tax;
-                Console.WriteLine("==> 10% tax applied");
-                Console.WriteLine("==> Final salary after tax: " + finalSalary);
-            }
-            else
-            {
-                double tax = salary * 0.20;
-                finalSalary = salary - tax;
-                Console.WriteLine("==> 20% tax applied");
-                Console.WriteLine("==> Final salary after tax: " + finalSalary);
-            }
+            //if (salary < 5000)
+            //{
+            //    Console.WriteLine("No tax");
+            //    Console.WriteLine("==> Final salary after tax: " + finalSalary);
+            //}
+            //else if (salary >= 5000 && salary <= 9999)
+            //{
+            //    double tax = salary * 0.10;
+            //    finalSalary = salary - tax;
+            //    Console.WriteLine("==> 10% tax applied");
+            //    Console.WriteLine("==> Final salary after tax: " + finalSalary);
+            //}
+            //else
+            //{
+            //    double tax = salary * 0.20;
+            //    finalSalary = salary - tax;
+            //    Console.WriteLine("==> 20% tax applied");
+            //    Console.WriteLine("==> Final salary after tax: " + finalSalary);
+            //}
             #endregion
 
             #region 1-	Write a program that allows the user to enter a number then print it.
-
+            Console.Write("Enter a number: ");
+            string input = Console.ReadLine();
+            Console.WriteLine("You entered: " + input);
             #endregion
 
             #region 2-	Write C# program that converts a string to an integer, but the string contains non-numeric characters. And mention what will happen 
