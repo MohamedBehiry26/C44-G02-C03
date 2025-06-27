@@ -120,24 +120,32 @@ namespace AssignmentOne
             #endregion
 
             #region 8-	Write a program that calculates the simple interest given the principal amount, rate of interest, and time. The formula for simple interest is Interest = (principal * rate * time) / 100.
-            Console.Write("Enter the principal amount: ");
-            double principal = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter the principal amount: ");
+            //double principal = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the rate of interest: ");
-            double rate = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter the rate of interest: ");
+            //double rate = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the time (in years): ");
-            double time = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter the time (in years): ");
+            //double time = Convert.ToDouble(Console.ReadLine());
 
-            double interest = (principal * rate * time) / 100;
+            //double interest = (principal * rate * time) / 100;
 
-            Console.WriteLine("Simple Interest = " + interest);
+            //Console.WriteLine("Simple Interest = " + interest);
 
             #endregion
 
             #region 9-	Write a program that calculates the Body Mass Index (BMI) given a person's weight in kilograms and height in meters. The formula for BMI is BMI = (Weight) / (Height * Height)
 
+            Console.Write("Enter weight in kilograms: ");
+            double weight = Convert.ToDouble(Console.ReadLine());
 
+            Console.Write("Enter height in meters: ");
+            double height = Convert.ToDouble(Console.ReadLine());
+
+            double bmi = weight / (height * height);
+
+            Console.WriteLine("Your BMI is: " + bmi);
             #endregion
 
             #region 10-	Write a program that takes the date from the user and displays it in various formats using string interpolation.
